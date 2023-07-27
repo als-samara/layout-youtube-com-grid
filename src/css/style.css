@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+    font-family: var(--default-font);
+}
+
+.secao-principal {
+    display: grid;
+    padding: 38px 35px 19px;
+    grid: "conteudo-principal aside";
+    max-width: 905px;
+    max-height: 420px;
+    grid-gap: 22px;
+    background-color: var(--background-color);
+}
+
+.conteudo-principal{
+    grid-area: conteudo-principal;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.conteudo-principal .informacoes img{
+    max-width: 100%;
+}
+
+.conteudo-principal .informacoes h1{
+    font-size: 1.8rem;
+    margin: 12px 0 7px;
+}
+
+.conteudo-principal .informacoes span {
+    font-size: 1.4rem;
+}
+
+.conteudo-principal .informacoes p {
+    font-size: 1.6rem;
+    margin: 9px 0 19px;
+}
+
+.aside .propaganda{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside .propaganda figcaption {
+    position: absolute;
+    font-size: 11px;
+}
+
+.aside .conteudo-relacionado {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+
+.aside .conteudo-relacionado .informacoes-relacionadas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.aside .conteudo-relacionado .informacoes-relacionadas h3 {
+    font-size: 14px;
+}
+
+.aside .conteudo-relacionado .informacoes-relacionadas p {
+    font-size: 11px;
+}
